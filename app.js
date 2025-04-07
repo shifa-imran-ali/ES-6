@@ -113,21 +113,65 @@
 // let merged = {num, name};
 // merged.education = [1,2,3,4,5]
 // console.log(merged);
-let sum = (a,b,c) =>{
-console.log(a+b+c);
-};
-let numbers = [1,5,8];
-sum(...numbers);
+// let sum = (a,b,c) =>{
+// console.log(a+b+c);
+// };
+// let numbers = [1,5,8];
+// sum(...numbers);
 
+// default parameter
+// function greet(name){
+//     console.log("hello!, " + name);
+// }
+// function greet(name = "guest"){
+//     console.log("Hello!, " + name);
+// }
+// greet("shifa");
+// with multiple values
+// function intro (name = "shifa", age = 17){
+//     console.log("My name is "+ name+ " and my age is "+ age);
+    
+// }
+// intro();
+// default parameter for calculation
+// function calculation(price, tax = price* 0.1){
+//     console.log(`total price : ${price + tax}`);
+    
+// }
+// calculation(200);
 
+// without rest parameters
+// function sum (a, b){
+//     console.log(a+b);
+    
+// };
+// sum(12, 23)
+//with rest parameters
+// function nums(...numbers){
+//     let total = 0;
+//     for(let i = 0; i < numbers.length; i++){
+//         total += numbers[i];
+//     }
+//     console.log(total); 
+// };
+// nums(10,20,30,34,45,6778,2453,346)
 
+// function greet (greeting , ...names){
+//     for(let i = 0; i < names.length ; i++){
+//         console.log(greeting, names[i]+"!");
+        
+//     }
+// }
+// greet("hey!,","shifa", "isha", "azlaan")
 
-
-
-
-
-
-
+// function name(){
+//     console.log(arguments);
+// }
+// name("shifa", "isha")
+// const name1 = {
+//     age : 21
+// }
+// console.log(name1);
 
 
 
