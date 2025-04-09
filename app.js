@@ -172,7 +172,117 @@
 //     age : 21
 // }
 // console.log(name1);
+// enhanced object literals
+// var name = "shifa";
+// var age = 17;
+// var course = "web and app development";
+// const data ={
+//     name,age,course,sayHello(){
+//         console.log("hello");
+        
+//     }
+// }
+// console.log(data);
+// console.log(data.sayHello());
 
+// const obj1 = {
+//     name: name,
+//     course: course,
+//     age: age
+
+// }
+// let name = "shifa";
+// let course = "web and app development";
+// let age  = 17;
+// const obj2 = {
+//     name: name,
+//     course: course,
+//     age: age
+
+// }
+// console.log( obj1, obj2);
+
+//promises
+// const promise = new Promise((resolve, reject)=>{
+//     const randomNum = Math.random();
+//     if(randomNum < 0.5){
+//         resolve('success');
+//     }
+//     else{
+//         reject('error!');
+//     }
+// })
+// promise.then((message)=>{
+//     console.log(message);
+    
+// })
+
+// const promise = new Promise((resolve,reject)=>{
+//     let userInput = prompt("is your career successful?");
+//     if(userInput == "yes" || userInput == "Yes" || userInput == "YES"){
+//         resolve("success");
+//     }
+//     else{
+//         reject("try again until your success");
+//     }
+// })
+// promise.then((message)=>{
+//     console.log(message);
+// })
+// .catch((error)=>{
+//     console.log(error);
+    
+// })
+
+//nested promises
+// const promise = new Promise ((resolve, reject)=>{
+//     setTimeout(()=>{
+//         resolve('hello pakistan!!');
+//     },2000)
+// });
+// promise.then((message)=>{
+//     console.log(message);
+//     return "hello karachi";
+// }).then((message)=>{
+//     console.log(message);
+//     return "hello sindh"
+// }).then((message)=>{
+//     console.log(message);
+// }).catch((error)=>{
+//     console.log(error);
+// })
+// promises all
+const promise1 = new Promise ((resolve, reject)=>{
+    let name = "shifa";
+    if(name){
+        resolve("success");
+    }
+    else{
+        reject("failure")
+    }
+})
+const promise2 = new Promise ((resolve, reject)=>{
+    let name = "shifa";
+    if(name){
+        resolve("success");
+    }
+    else{
+        reject("failure")
+    }
+})
+const promise3 = new Promise ((resolve, reject)=>{
+    let name = "shifa";
+    if(name){
+        resolve("success");
+    }
+    else{
+        reject("failure")
+    }
+})
+Promise.all([promise1, promise2, promise3]).then((messages)=>{
+    console.log(messages);
+    
+})
 
 
 
